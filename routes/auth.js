@@ -58,7 +58,6 @@ router.post('/login', async (req, res) => {
         return res.send('Email not found')
         
     }
-
     // Check password
     const validPassword = await bcrypt.compare(req.body.password, userRegistered.password)
     if(!validPassword) return res.sendStatus(400).send('Invalid password')

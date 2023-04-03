@@ -14,10 +14,10 @@ router.post('/', verify, async (req, res) => {
         name: req.body.name,
         email: req.body.email,
         url: req.body.url,
-        identifier: req.body.identifier
-
+        identifier: req.body.identifier,
+        collegeName: req.body.collegeName
     })
-
+    
     // Error handling
     try {
         const savedDoc = await doc.save()

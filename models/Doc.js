@@ -17,6 +17,10 @@ const docSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    collegeName: {
+        type: String,
+        required: true
+    },
     exported: {
         type: Boolean,
         required: true,
